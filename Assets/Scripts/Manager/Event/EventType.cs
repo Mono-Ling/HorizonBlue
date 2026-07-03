@@ -13,6 +13,22 @@ public enum EventType
     /// </summary>
     PlayerMove,
     /// <summary>
+    /// int类型参数
+    /// </summary>
+    OnMoneyChange,
+    /// <summary>
+    /// int类型参数
+    /// </summary>
+    OnOxygenChange,
+    /// <summary>
+    /// int类型参数
+    /// </summary>
+    OnPlayerSpeedChange,
+    /// <summary>
+    /// 无参数
+    /// </summary>
+    OnPlayerDie,
+    /// <summary>
     /// float类型参数
     /// </summary>
     BoatMove,
