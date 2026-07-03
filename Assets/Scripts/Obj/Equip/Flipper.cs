@@ -13,18 +13,18 @@ public class Flipper : BaseEquip
         switch (quality)
         {
             case EquipQuality.Low:
-                EventBus.Instance.TriggerEvent(EventType.OnPlayerSpeedChange, GlobalValue.PlayerSpeed.Slow);
+                GlobalValue.Instance.SetPlayerSpeed(GlobalValue.PlayerSpeed.Slow);
                 break;
             case EquipQuality.Middle:
-                EventBus.Instance.TriggerEvent(EventType.OnPlayerSpeedChange, GlobalValue.PlayerSpeed.Normal);
+                GlobalValue.Instance.SetPlayerSpeed(GlobalValue.PlayerSpeed.Normal);
                 break;
             case EquipQuality.High:
-                EventBus.Instance.TriggerEvent(EventType.OnPlayerSpeedChange, GlobalValue.PlayerSpeed.Fast);
+                GlobalValue.Instance.SetPlayerSpeed(GlobalValue.PlayerSpeed.Fast);
                 break;
         }
     }
     override public void Uninstall()
     {
-        EventBus.Instance.TriggerEvent(EventType.OnPlayerSpeedChange, GlobalValue.PlayerSpeed.Slow);
+        GlobalValue.Instance.SetPlayerSpeed(GlobalValue.PlayerSpeed.Slow);
     }
 }

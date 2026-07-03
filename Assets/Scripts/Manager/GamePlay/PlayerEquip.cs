@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class PlayerEquip : SingleMono<PlayerEquip>
 {
-    public DivingSuit divingSuit;
-    public Flipper flipper;
-    public OxygenBottle oxygenBottle;
+    public DivingSuit divingSuit = new DivingSuit(EquipQuality.Low);
+    public Flipper flipper = new Flipper(EquipQuality.Low);
+    public OxygenBottle oxygenBottle = new OxygenBottle(EquipQuality.Low);
     private Dictionary<Type,BaseEquip> equipMap = new Dictionary<Type, BaseEquip>();
     // Start is called before the first frame update
     void Start()

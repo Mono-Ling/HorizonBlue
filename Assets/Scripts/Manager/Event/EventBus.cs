@@ -32,7 +32,7 @@ public class EventBus
             if(eventDic[eventType] is Event<T> existingEvent)
                 existingEvent.action += action;
             else
-                Debug.LogError($"【事件总线】事件类型不匹配: {eventType}. 期望类型: {typeof(T)}, 实际类型: {eventDic[eventType].GetType()}");
+                Debug.LogError($"【事件总线】事件类型不匹配: {eventType}. 实际类型: {typeof(T)}");
         }
     }
     public void AddListener(EventType eventType, UnityAction action)
@@ -48,7 +48,7 @@ public class EventBus
             if (eventDic[eventType] is Event existingEvent)
                 existingEvent.action += action;
             else
-                Debug.LogError($"【事件总线】事件类型不匹配: {eventType}. 期望类型: 无参, 实际类型: {eventDic[eventType].GetType()}");
+                Debug.LogError($"【事件总线】事件类型不匹配: {eventType}. 期望类型: 无参");
         }
     }
     public void RemoveListener<T>(EventType eventType, UnityAction<T> action)
@@ -58,7 +58,7 @@ public class EventBus
             if (eventDic[eventType] is Event<T> existingEvent)
                 existingEvent.action -= action;
             else
-                Debug.LogError($"【事件总线】事件类型不匹配: {eventType}. 期望类型: {typeof(T)}, 实际类型: {eventDic[eventType].GetType()}");
+                Debug.LogError($"【事件总线】事件类型不匹配: {eventType}. 实际类型: {typeof(T)}");
         }
         else
             Debug.LogWarning($"【事件总线】未找到事件类型: {eventType}");
@@ -70,7 +70,7 @@ public class EventBus
             if(eventDic[eventType] is Event existingEvent)
                 existingEvent.action -= action;
             else
-                Debug.LogError($"【事件总线】事件类型不匹配: {eventType}; 期望类型: 无参, 实际类型: {eventDic[eventType].GetType()}");
+                Debug.LogError($"【事件总线】事件类型不匹配: {eventType}; 期望类型: 无参");
         }
         else
             Debug.LogWarning($"【事件总线】未找到事件类型: {eventType}");
@@ -82,7 +82,7 @@ public class EventBus
             if (eventDic[eventType] is Event<T> existingEvent)
                 existingEvent.Trigger(args);
             else
-                Debug.LogError($"【事件总线】事件类型不匹配: {eventType}. 期望类型: {typeof(T)}, 实际类型: {eventDic[eventType].GetType()}");
+                Debug.LogError($"【事件总线】事件类型不匹配: {eventType}. 实际类型: {typeof(T)}");
         }
         else
             Debug.LogWarning($"【事件总线】未找到事件类型: {eventType}");
@@ -94,7 +94,7 @@ public class EventBus
             if(eventDic[eventType] is Event existingEvent)
                 existingEvent.Trigger();
             else
-                Debug.LogError($"【事件总线】事件类型不匹配: {eventType}. 期望类型: 无参, 实际类型: {eventDic[eventType].GetType()}");
+                Debug.LogError($"【事件总线】事件类型不匹配: {eventType}. 期望类型: 无参");
         }
         else
             Debug.LogWarning($"【事件总线】未找到事件类型: {eventType}");

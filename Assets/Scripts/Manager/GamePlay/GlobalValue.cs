@@ -7,8 +7,8 @@ public class GlobalValue : SingleMono<GlobalValue>
     public enum PlayerSpeed
     {
         Slow = 10,
-        Normal = 30,
-        Fast = 70,
+        Normal = 15,
+        Fast = 20,
     }
     public int money { get; private set; } = 0;
     public int oxygen { get; private set; } = 100;
