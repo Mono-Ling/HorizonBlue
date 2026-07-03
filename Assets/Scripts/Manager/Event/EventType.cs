@@ -23,6 +23,10 @@ public enum EventType
     /// <summary>
     /// int类型参数
     /// </summary>
+    OnMaxOxygenChange,
+    /// <summary>
+    /// int类型参数
+    /// </summary>
     OnPlayerSpeedChange,
     /// <summary>
     /// int类型参数
@@ -48,5 +52,12 @@ public enum EventType
     /// float类型参数
     /// </summary>
     OxygenDeclineSpeed,
-
+    /// <summary>
+    /// int类型参数
+    /// </summary>
+    OxygenChange,
+    /// <summary>
+    /// int类型参数
+    /// </summary>
+    MaxOxygenChange,
 }

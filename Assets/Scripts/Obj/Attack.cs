@@ -9,7 +9,7 @@ public class Attack : BaseObj
     {
         if(other.CompareTag("Player"))
         {
-            GlobalValue.Instance.RemoveOxygen(damage);
+            EventBus.Instance.TriggerEvent(EventType.OxygenChange, damage);
             Destroy(gameObject);
         }
     }
