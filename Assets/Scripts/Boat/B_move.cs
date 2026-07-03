@@ -12,19 +12,19 @@ public class B_move : MonoBehaviour
     {
         InputManager.Instance.EnableInput();
         rb = GetComponent<Rigidbody2D>();
-        EventBus.Instance.AddListener<Vector2>(EventType.PlayerMove, Move);
+        EventBus.Instance.AddListener<float>(EventType.BoatMove, Move);
 
     }
-    public void Move(Vector2 vector)
+    public void Move(float f)
     {
         vector2 = rb.velocity; 
-       vector2.x = vector.x * B_speed;
+       vector2.x = f * B_speed;
         rb.velocity = vector2;
     }
 
     private void OnDestroy()
     {
-        EventBus.Instance.RemoveListener<Vector2>(EventType.PlayerMove,Move);
+        EventBus.Instance.RemoveListener<float>(EventType.BoatMove,Move);
     }
 
 }

@@ -12,4 +12,9 @@ public enum EventType
     /// Vector2类型参数
     /// </summary>
     PlayerMove,
+    /// <summary>
+    /// float类型参数
+    /// </summary>
+    BoatMove,
+
 }

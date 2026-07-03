@@ -16,6 +16,7 @@ public class InputManager : SingleMono<InputManager>
     {
         OnPlayerMove();
         OnAnchorMove();
+        OnBoatMove();
     }
     public void EnableInput() => isInputEnabled = true;
     public void DisableInput() => isInputEnabled = false;
@@ -32,4 +33,11 @@ public class InputManager : SingleMono<InputManager>
         float scroll = Input.GetAxis("Vertical");
         EventBus.Instance.TriggerEvent(EventType.AnchorMove, scroll);
     }
+    public void OnBoatMove()
+    {
+        if (!isInputEnabled) return;
+        float scroll = Input.GetAxis("Horizontal");
+        EventBus.Instance.TriggerEvent(EventType.BoatMove, scroll);
+    }
+
 }
