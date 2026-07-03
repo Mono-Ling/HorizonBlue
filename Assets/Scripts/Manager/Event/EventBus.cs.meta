@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/Manager/Event/EventBus.cs.meta
 guid: 0d2f90d30e59c6047a235aec9b4508b6
+========
+guid: 4db87dad91d637846bbe4c9fbedd17a1
+>>>>>>>> 新增部分物品交互，新增装备:Assets/Scripts/Manager/GamePlay/PlayerEquip.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

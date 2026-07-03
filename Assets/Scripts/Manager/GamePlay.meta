@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Resources.meta
+guid: 9ef6d43f9cdd260458fee3449c8d860f
+========
 guid: 0a41b7759ed8eb24f83acdbe91e1f7f1
+>>>>>>>> 新增部分物品交互，新增装�?Assets/Scripts/Manager/GamePlay.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

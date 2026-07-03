@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scripts/Manager/Event/EventType.cs.meta
 guid: 92f65cb55a6e9c94aaa208b97dc734a2
+========
+guid: 48805053047c2dd479e4ada60b5201ff
+>>>>>>>> 新增部分物品交互，新增装备:Assets/Scripts/Obj/Attack.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2

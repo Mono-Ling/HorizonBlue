@@ -25,6 +25,10 @@ public enum EventType
     /// </summary>
     OnPlayerSpeedChange,
     /// <summary>
+    /// int类型参数
+    /// </summary>
+    OnMaxDeepChange,
+    /// <summary>
     /// 无参数
     /// </summary>
     OnPlayerDie,
@@ -32,6 +36,14 @@ public enum EventType
     /// float类型参数
     /// </summary>
     BoatMove,
+    /// <summary>
+    /// BaseEquip类型参数
+    /// </summary>
+    OnPlayerEquipChange,
+    /// <summary>
+    /// bool类型参数
+    /// </summary>
+    PlayerLightingChange,
     /// <summary>
     /// float类型参数
     /// </summary>
