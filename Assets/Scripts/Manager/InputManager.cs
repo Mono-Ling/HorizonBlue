@@ -12,7 +12,7 @@ public class InputManager : SingleMono<InputManager>
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         OnPlayerMove();
         OnAnchorMove();
