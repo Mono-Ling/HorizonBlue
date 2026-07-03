@@ -9,7 +9,7 @@ public class KeepAttack : BaseObj
     {
         if (other.CompareTag("Player"))
         {
-            
+            EventBus.Instance.TriggerEvent(EventType.OxygenDeclineSpeed, damageMultiplier);
         }
     }
 }
