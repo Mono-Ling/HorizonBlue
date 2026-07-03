@@ -32,5 +32,9 @@ public enum EventType
     /// float类型参数
     /// </summary>
     BoatMove,
+    /// <summary>
+    /// float类型参数
+    /// </summary>
+    OxygenDeclineSpeed,
 
 }
