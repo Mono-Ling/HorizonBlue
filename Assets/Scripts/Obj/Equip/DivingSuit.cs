@@ -13,20 +13,20 @@ public class DivingSuit : BaseEquip
         switch (quality)
         {
             case EquipQuality.Low:
-                EventBus.Instance.TriggerEvent(EventType.OnMaxDeepChange, 100);
+                GlobalValue.Instance.SetMaxDeep(100);
                 break;
             case EquipQuality.Middle:
-                EventBus.Instance.TriggerEvent(EventType.OnMaxDeepChange, 200);
+                GlobalValue.Instance.SetMaxDeep(200);
                 break;
             case EquipQuality.High:
-                EventBus.Instance.TriggerEvent(EventType.OnMaxDeepChange, 200);
+                GlobalValue.Instance.SetMaxDeep(200);
                 EventBus.Instance.TriggerEvent(EventType.PlayerLightingChange, true);
                 break;
         }
     }
     override public void Uninstall()
     {
-        EventBus.Instance.TriggerEvent(EventType.OnMaxDeepChange, 100);
-        EventBus.Instance.TriggerEvent(EventType.PlayerLightingChange, false);
+        // EventBus.Instance.TriggerEvent(EventType.OnMaxDeepChange, 100);
+        // EventBus.Instance.TriggerEvent(EventType.PlayerLightingChange, false);
     }
 }

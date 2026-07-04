@@ -87,6 +87,5 @@ public enum EventType
     /// <summary>
     /// 无参，玩家撤离
     /// </summary>
-    PlayerEvacuate
-    
+    PlayerEvacuate,
 }
