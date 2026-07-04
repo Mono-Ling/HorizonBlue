@@ -25,16 +25,11 @@ public class StoryManager
         "也有人说，\r\n如果他早点撤离，\r\n一切都不会发生。\r\n",
         "今天，\r\n我要下去看看。\r\n",
     };
-    private List<string> _coreTip = new List<string>()
-    {
-        "船是家。\r\n锚链是回家的路。\r\n"
-    };
-
     private List<StoryData> _storyDatas = new List<StoryData>()
     {
         new StoryData
         {
-            storyIndex = 1,
+            storyIndex = 0,
             name = "残破船名牌",
             location = "浅海残骸区",
             text = "字迹被海水磨掉了一半，还能看见父亲船名的最后几个字母。",
@@ -42,7 +37,7 @@ public class StoryManager
         },
         new StoryData
         {
-            storyIndex = 2,
+            storyIndex = 1,
             name = "父亲的航海日志",
             location = "浅海残骸区",
             text = "风暴比预报提前了六小时。\r\n回港航线被暗流截断。\r\n强行返航，船会横在浪里。\r\n我去绞盘舱。\r\n",
@@ -50,7 +45,7 @@ public class StoryManager
         },
         new StoryData
         {
-            storyIndex = 3,
+            storyIndex = 2,
             name = "海底断锚",
             location = "浅海残骸区",
             text = "它不是掉在这里的，\r\n它是被打进这里的。\r\n",
@@ -58,7 +53,7 @@ public class StoryManager
         },
         new StoryData
         {
-            storyIndex = 4,
+            storyIndex = 3,
             name = "手动锁杆",
             location = "烧毁的锚链绞盘旁边",
             text = "手动锁杆被压到了底。\r\n固定销弯曲变形。\r\n这不是机器自己完成的。\r\n有人用尽全力，\r\n把锚链锁住了。\r\n",
@@ -66,7 +61,7 @@ public class StoryManager
         },
         new StoryData
         {
-            storyIndex = 5,
+            storyIndex = 4,
             name = "烧毁的锚链绞盘零件",
             location = "沉船内部，靠近机舱",
             text = "锚链绞盘：\r\n用于收放和锁住船锚的机器。\r\n如果刹车失效，\r\n锚链会被海流拖着继续滑出，\r\n船也无法稳定。\r\n, 它曾经承受过远超极限的拉力。\r\n自动刹车失效后，\r\n有人仍试图让锚链停住。\r\n",
@@ -111,16 +106,16 @@ public class StoryManager
         return _instance;
     }
 
-    public void PushStory()
+    public StoryData PushStory()
     {
         _storyIndex++;
+        return _storyDatas[_storyIndex - 1];
     }
     public void ClearStory()
     {
         _storyIndex = 0;
     }
-    public string GetStoryText()
-    {
-        return "";
-    }
+    public string CoreTip() => "船是家。锚链是回家的路。";
+    public List<string> EndingScript => _endingScript;
+    public List<string> OpeningScript => _openingScript;
 }
