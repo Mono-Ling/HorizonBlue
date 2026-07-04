@@ -5,59 +5,63 @@ using UnityEngine;
 public enum EventType
 {
     /// <summary>
-    /// float类型参数
+    /// float锟斤拷锟酵诧拷锟斤拷
     /// </summary>
     AnchorMove,
     /// <summary>
-    /// Vector2类型参数
+    /// Vector2锟斤拷锟酵诧拷锟斤拷
     /// </summary>
     PlayerMove,
     /// <summary>
-    /// int类型参数
+    /// int锟斤拷锟酵诧拷锟斤拷
     /// </summary>
     OnMoneyChange,
     /// <summary>
-    /// int类型参数
+    /// int锟斤拷锟酵诧拷锟斤拷
     /// </summary>
     OnOxygenChange,
     /// <summary>
-    /// int类型参数
+    /// int锟斤拷锟酵诧拷锟斤拷
     /// </summary>
     OnMaxOxygenChange,
     /// <summary>
-    /// int类型参数
+    /// int锟斤拷锟酵诧拷锟斤拷
     /// </summary>
     OnPlayerSpeedChange,
     /// <summary>
-    /// int类型参数
+    /// int锟斤拷锟酵诧拷锟斤拷
     /// </summary>
     OnMaxDeepChange,
     /// <summary>
-    /// 无参数
+    /// int绫诲瀷鍙傛暟
+    /// </summary>
+    OnCurrentDeepChange,
+    /// <summary>
+    /// 锟睫诧拷锟斤拷
     /// </summary>
     OnPlayerDie,
     /// <summary>
-    /// float类型参数
+    /// float锟斤拷锟酵诧拷锟斤拷
     /// </summary>
     BoatMove,
     /// <summary>
-    /// BaseEquip类型参数
+    /// BaseEquip锟斤拷锟酵诧拷锟斤拷
     /// </summary>
     OnPlayerEquipChange,
     /// <summary>
-    /// bool类型参数
+    /// bool锟斤拷锟酵诧拷锟斤拷
     /// </summary>
     PlayerLightingChange,
     /// <summary>
-    /// float类型参数
+    /// float锟斤拷锟酵诧拷锟斤拷
     /// </summary>
     OxygenDeclineSpeed,
     /// <summary>
-    /// int类型参数
+    /// int锟斤拷锟酵诧拷锟斤拷
     /// </summary>
     OxygenChange,
     /// <summary>
-    /// int类型参数
+    /// int锟斤拷锟酵诧拷锟斤拷
     /// </summary>
     MaxOxygenChange,
 }
