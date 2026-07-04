@@ -13508,6 +13508,11 @@ PolygonCollider2D:
       - {x: 4.15625, y: -3.34375}
       - {x: 4.15625, y: -2.90625}
   m_UseDelaunayMesh: 0
+--- !u!1 &1734837342 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8144784017664731302, guid: 8a5f2d49cba3a5741bf7e6c26a23f0e5, type: 3}
+  m_PrefabInstance: {fileID: 3112554269589371128}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1759067601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17909,6 +17914,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5067566167923880591, guid: 8a5f2d49cba3a5741bf7e6c26a23f0e5, type: 3}
+      propertyPath: lightObj
+      value: 
+      objectReference: {fileID: 1734837342}
     - target: {fileID: 7577099602750813194, guid: 8a5f2d49cba3a5741bf7e6c26a23f0e5, type: 3}
       propertyPath: low
       value: 

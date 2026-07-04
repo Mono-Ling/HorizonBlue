@@ -47,7 +47,7 @@ public class Main : MonoBehaviour
 
         UIManager.Instance.ShowUI<OxygenGauge>();
 
-        GlobalValue.Instance.AddMoney(4);
+        UIManager.Instance.ShowUI<MemonyPanel>();
 
 #if UNITY_EDITOR
         Debug.Log($"[Main] 单例预热完成：" +

@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f24a6f29f64b43e44ad9c3ce47f6cc3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light: {fileID: 8144784017664731302}
+  lightObj: {fileID: 8144784017664731302}
 --- !u!4 &3795692308736325958 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7552582706839291426, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
