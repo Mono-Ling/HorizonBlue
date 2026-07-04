@@ -15,6 +15,6 @@ public class OxygenBottle : BaseEquip
     }
     public override void Uninstall()
     {
-        //EventBus.Instance.TriggerEvent(EventType.MaxOxygenChange, -_defaultOxygenAmount * (int)quality);
+        EventBus.Instance.TriggerEvent(EventType.MaxOxygenChange, _defaultOxygenAmount);
     }
 }

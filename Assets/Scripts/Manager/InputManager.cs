@@ -30,7 +30,7 @@ public class InputManager : SingleMono<InputManager>
     public void OnAnchorMove()
     {
         if(!isInputEnabled) return;
-        float scroll = Input.GetAxis("Vertical");
+        float scroll = Input.GetAxis("Mouse ScrollWheel");
         EventBus.Instance.TriggerEvent(EventType.AnchorMove, scroll);
     }
     public void OnBoatMove()

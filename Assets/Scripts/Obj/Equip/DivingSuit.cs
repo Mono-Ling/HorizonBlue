@@ -16,10 +16,10 @@ public class DivingSuit : BaseEquip
                 EventBus.Instance.TriggerEvent(EventType.OnMaxDeepChange, 100);
                 break;
             case EquipQuality.Middle:
-                EventBus.Instance.TriggerEvent(EventType.OnMaxDeepChange, int.MaxValue);
+                EventBus.Instance.TriggerEvent(EventType.OnMaxDeepChange, 200);
                 break;
             case EquipQuality.High:
-                EventBus.Instance.TriggerEvent(EventType.OnMaxDeepChange, int.MaxValue);
+                EventBus.Instance.TriggerEvent(EventType.OnMaxDeepChange, 200);
                 EventBus.Instance.TriggerEvent(EventType.PlayerLightingChange, true);
                 break;
         }
