@@ -21,9 +21,10 @@ public class OnAnchor : BaseState
         if (player != null && anchor != null)
         {
             playerTransform = player.transform;
+            playerTransform.localPosition = Vector3.zero;
             playerRb = player.GetComponent<Rigidbody2D>();
 
-            playerTransform.SetParent(anchor.transform);
+            playerTransform.SetParent(anchor.transform,false);
             if (playerRb != null)
             {
                 playerRb.isKinematic = true;

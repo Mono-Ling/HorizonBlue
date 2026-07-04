@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OnBoat : BaseState
 {
-    private Vector3 _offset = new Vector3(0,0.5f,0);
+    private Vector3 _offset = new Vector3(0,0f,0);
     private Transform playerTransform;
     private Transform boatTransform;
     private Rigidbody2D playerRb;
@@ -24,7 +24,7 @@ public class OnBoat : BaseState
             playerRb = player.GetComponent<Rigidbody2D>();
 
             // 将玩家设置为船的子物体，跟随船移动
-            playerTransform.SetParent(boatTransform);
+            playerTransform.SetParent(boatTransform,false);
             playerTransform.localPosition = _offset;
             if (playerRb != null)
             {
