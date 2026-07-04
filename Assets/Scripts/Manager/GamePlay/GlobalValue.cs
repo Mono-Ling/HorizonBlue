@@ -11,8 +11,6 @@ public class GlobalValue : SingleMono<GlobalValue>
         Fast = 20,
     }
     public int money { get; private set; } = 0;
-    public int oxygen { get; private set; } = 100;
-    public int maxOxygen { get; private set; } = 100;
     public PlayerSpeed playerSpeed { get; private set; } = PlayerSpeed.Slow;
     public int maxDeep { get; private set; } = 100;
     public int currentDeep { get; private set; } = 0;
@@ -33,22 +31,9 @@ public class GlobalValue : SingleMono<GlobalValue>
         EventBus.Instance.TriggerEvent<int>(EventType.OnMoneyChange, money);
         return true;
     }
-    public void AddOxygen(int value)
-    {
-        oxygen += value;
-        oxygen = Mathf.Min(oxygen, maxOxygen);
-        EventBus.Instance.TriggerEvent<int>(EventType.OnOxygenChange, oxygen);
-    }
-    public void RemoveOxygen(int value)
-    {
-        oxygen -= value;
-        if(oxygen <= 0)
-            EventBus.Instance.TriggerEvent(EventType.OnPlayerDie);
-        oxygen = Mathf.Max(0, oxygen);
-        EventBus.Instance.TriggerEvent<int>(EventType.OnOxygenChange, oxygen);
-    }
     public void SetPlayerSpeed(PlayerSpeed speed)
     {
+        playerSpeed = speed;
         EventBus.Instance.TriggerEvent<int>(EventType.OnPlayerSpeedChange, (int)speed);
     }
     public void SetMaxDeep(int value)

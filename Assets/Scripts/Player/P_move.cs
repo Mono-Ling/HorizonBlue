@@ -12,6 +12,7 @@ public class P_move : MonoBehaviour
     {
         InputManager.Instance.EnableInput();
         rb = GetComponent<Rigidbody2D>();
+        speed = (float)GlobalValue.Instance.playerSpeed;
         EventBus.Instance.AddListener<Vector2>(EventType.PlayerMove,Move);
         EventBus.Instance.AddListener<int>(EventType.OnPlayerSpeedChange, OnSpeedChange);
     }
