@@ -14,6 +14,8 @@ public class DeepGauge : BaseUI
             Debug.LogError("【空引用】GaugeImage is null");
         EventBus.Instance.AddListener<int>(EventType.OnMaxDeepChange, GetMaxDeep);
         EventBus.Instance.AddListener<int>(EventType.OnCurrentDeepChange, GetCurrentDeep);
+        GetMaxDeep(GlobalValue.Instance.maxDeep);
+        GetCurrentDeep(0);
     }
     private void GetCurrentDeep(int value)
     {

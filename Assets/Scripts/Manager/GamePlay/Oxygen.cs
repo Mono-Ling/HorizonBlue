@@ -8,7 +8,7 @@ public class Oxygen : SingleMono<Oxygen>
     private const int _changeFrame = 5;
     private int _multiply = 1;
     private int value = 100;
-    private int maxValue = 100;
+    public int maxValue {get; private set;} = 100;
     private Coroutine coroutine;
     // Start is called before the first frame update
     void Start()
@@ -42,10 +42,11 @@ public class Oxygen : SingleMono<Oxygen>
     private void OxygenChange(int delta)
     {
         this.value += delta;
-        this.value = Mathf.Clamp(this.value, 0, maxValue);
         if (this.value <= 0)
             EventBus.Instance.TriggerEvent(EventType.OnPlayerDie);
+        this.value = Mathf.Clamp(this.value, 0, maxValue);
         EventBus.Instance.TriggerEvent<int>(EventType.OnOxygenChange, this.value);
+        Debug.Log(this.value);
     }
     private void MaxOxygenChange(int value)
     {
