@@ -64,29 +64,4 @@ public enum EventType
     /// int���Ͳ���
     /// </summary>
     MaxOxygenChange,
-    /// <summary>
-    /// BaseState类型参数
-    /// </summary>
-    ChangeState,
-    /// <summary>
-    /// 无参，F交互键事件
-    /// </summary>
-    Interactive,
-    /// <summary>
-    /// 无参，停止船移动
-    /// </summary>
-    StopBoat,
-    /// <summary>
-    /// 无参，玩家进入撤离
-    /// </summary>
-    PlayerEnterEvacuate,
-    /// <summary>
-    /// 无参，玩家离开撤离区
-    /// </summary>
-    PlayerExitEvacute,
-    /// <summary>
-    /// 无参，玩家撤离
-    /// </summary>
-    PlayerEvacuate
-    
 }

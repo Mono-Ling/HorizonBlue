@@ -9,6 +9,7 @@ public class P_move : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        InputManager.Instance.EnableInput();
         rb = GetComponent<Rigidbody2D>();
         speed = (float)GlobalValue.Instance.playerSpeed;
         EventBus.Instance.AddListener<Vector2>(EventType.PlayerMove,Move);

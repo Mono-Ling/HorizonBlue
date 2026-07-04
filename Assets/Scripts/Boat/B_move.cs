@@ -10,26 +10,21 @@ public class B_move : MonoBehaviour
 
     private void Start()
     {
+        InputManager.Instance.EnableInput();
         rb = GetComponent<Rigidbody2D>();
         EventBus.Instance.AddListener<float>(EventType.BoatMove, Move);
-        EventBus.Instance.AddListener(EventType.StopBoat, StopBoat);
-    }
 
+    }
     public void Move(float f)
     {
-        vector2 = rb.velocity;
-        vector2.x = f * B_speed;
+        vector2 = rb.velocity; 
+       vector2.x = f * B_speed;
         rb.velocity = vector2;
-    }
-
-    private void StopBoat()
-    {
-        rb.velocity = Vector2.zero;
     }
 
     private void OnDestroy()
     {
-        EventBus.Instance.RemoveListener<float>(EventType.BoatMove, Move);
-        EventBus.Instance.RemoveListener(EventType.StopBoat, StopBoat);
+        EventBus.Instance.RemoveListener<float>(EventType.BoatMove,Move);
     }
+
 }

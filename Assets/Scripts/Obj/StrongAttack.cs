@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StrongAttack : BaseObj
 {
-    override protected void OnTriggerEnter2D(Collider2D other)
+    override protected void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {

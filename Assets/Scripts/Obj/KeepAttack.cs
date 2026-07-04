@@ -5,7 +5,7 @@ using UnityEngine;
 public class KeepAttack : BaseObj
 {
     public float damageMultiplier = 1f;
-    protected override void OnTriggerEnter2D(Collider2D other)
+    protected override void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
