@@ -22,14 +22,14 @@ public class OxygenGauge : BaseUI
     public void GetCurrentOxygen(int value)
     {
         _currentOxygen = value;
-        float fillAmount = (float)_currentOxygen / Mathf.Clamp01(_maxOxygen);
+        float fillAmount = (float)_currentOxygen / Mathf.Max(1, _maxOxygen);
         _gaugeImage.fillAmount = fillAmount;
         _oxygenText.text = $"{_currentOxygen}/{_maxOxygen}";
     }
     public void GetMaxOxygen(int value)
     {
         _maxOxygen = value;
-        float fillAmount = (float)_currentOxygen / Mathf.Clamp01(_maxOxygen);
+        float fillAmount = (float)_currentOxygen / Mathf.Max(1, _maxOxygen);
         _gaugeImage.fillAmount = fillAmount;
         _oxygenText.text = $"{_currentOxygen}/{_maxOxygen}";
     }

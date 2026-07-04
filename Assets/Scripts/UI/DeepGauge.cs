@@ -18,12 +18,12 @@ public class DeepGauge : BaseUI
     private void GetCurrentDeep(int value)
     {
         _currentDeep = value;
-        _gaugeImage.fillAmount = (float)_currentDeep / Mathf.Clamp01(_maxDeep);
+        _gaugeImage.fillAmount = (float)_currentDeep / Mathf.Max(1, _maxDeep);
     }
     private void GetMaxDeep(int value)
     {
         _maxDeep = value;
-        _gaugeImage.fillAmount = (float)_currentDeep / Mathf.Clamp01( _maxDeep);
+        _gaugeImage.fillAmount = (float)_currentDeep / Mathf.Max(1, _maxDeep);
     }
     void OnDestroy()
     {

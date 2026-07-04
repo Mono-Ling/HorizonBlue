@@ -39,13 +39,13 @@ public class Oxygen : SingleMono<Oxygen>
     {
         _multiply = Mathf.Max(1, (int)delta);
     }
-    private void OxygenChange(int value)
+    private void OxygenChange(int delta)
     {
-        this.value += value;
-        if(value <= 0)
-            EventBus.Instance.TriggerEvent(EventType.OnPlayerDie);
+        this.value += delta;
         this.value = Mathf.Clamp(this.value, 0, maxValue);
-        EventBus.Instance.TriggerEvent<int>(EventType.OnOxygenChange, value);
+        if (this.value <= 0)
+            EventBus.Instance.TriggerEvent(EventType.OnPlayerDie);
+        EventBus.Instance.TriggerEvent<int>(EventType.OnOxygenChange, this.value);
     }
     private void MaxOxygenChange(int value)
     {

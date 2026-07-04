@@ -25,9 +25,17 @@ public class PlayerEquip : SingleMono<PlayerEquip>
             equipMap[type].Uninstall();
             equipMap[type] = equip;
             equipMap[type].Install();
+
+            // 同步更新 public 字段，否则 UpgradePanel 读取的是旧引用
+            if (equip is DivingSuit ds)
+                divingSuit = ds;
+            else if (equip is Flipper fl)
+                flipper = fl;
+            else if (equip is OxygenBottle ob)
+                oxygenBottle = ob;
         }
         else
-            Debug.LogError("��δע��װ�����͡�" + type.ToString());
+            Debug.LogError("��δע��װ�����͡�" + type.ToString());
     }
     private void OnDestroy()
     {
