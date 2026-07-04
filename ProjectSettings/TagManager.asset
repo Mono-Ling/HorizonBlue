@@ -38,6 +38,30 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: B1
+    uniqueID: 1471373915
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: L1
+    uniqueID: 1552670821
+    locked: 0
+  - name: L2
+    uniqueID: 3187894865
+    locked: 0
+  - name: L3
+    uniqueID: 219610325
+    locked: 0
+  - name: Player
+    uniqueID: 2630250311
+    locked: 0
+  - name: L5
+    uniqueID: 2909770607
+    locked: 0
+  - name: L6
+    uniqueID: 558800849
+    locked: 0
+  - name: L7
+    uniqueID: 2899285783
     locked: 0
