@@ -15,6 +15,7 @@ public class P_Animation : MonoBehaviour
         if(!animator)
             Debug.LogError("【空引用】animator is null");
         EventBus.Instance.AddListener<Vector2>(EventType.PlayerMove,GetDir);
+        EventBus.Instance.AddListener(EventType.OnPlayerDie,PlayerDie);
     }
 
     private void GetDir(Vector2 dir)
@@ -30,9 +31,14 @@ public class P_Animation : MonoBehaviour
             animator.SetFloat(_vertical,-1);
         }
     }
-    private void PlayerDie() => animator.SetBool(_isDie,true);
+    private void PlayerDie()
+    {
+        animator.SetBool(_isDie,true);
+        Debug.LogWarning("玩家死亡");
+    }
     void OnDestroy()
     {
         EventBus.Instance.RemoveListener<Vector2>(EventType.PlayerMove,GetDir);
+        EventBus.Instance.RemoveListener(EventType.OnPlayerDie,PlayerDie);
     }
 }

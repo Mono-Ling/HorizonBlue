@@ -46,6 +46,6 @@ public class GlobalValue : SingleMono<GlobalValue>
         currentDeep = value;
         if(currentDeep > maxDeep)
             EventBus.Instance.TriggerEvent(EventType.OnPlayerDie);
-        EventBus.Instance.TriggerEvent(EventType.AnchorMove, (float)currentDeep);
+        EventBus.Instance.TriggerEvent(EventType.OnCurrentDeepChange, currentDeep);
     }
 }

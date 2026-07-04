@@ -38,6 +38,8 @@ public class OnGame : BaseState
 
         // 启动空窗期，防止从锚脱离时立即触发撤离
         cooldownRemaining = EvacuateCooldown;
+
+        Oxygen.Instance.StartReduce();
     }
 
     private void OnPlayerEnterEvacuate()
@@ -98,5 +100,7 @@ public class OnGame : BaseState
         }
 
         cooldownRemaining = 0f;
+
+        Oxygen.Instance.StopReduce();
     }
 }

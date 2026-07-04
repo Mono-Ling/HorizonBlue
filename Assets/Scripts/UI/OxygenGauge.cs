@@ -9,7 +9,7 @@ public class OxygenGauge : BaseUI
     public Image _gaugeImage;
     public TextMeshProUGUI _oxygenText;
     private int _currentOxygen = 0;
-    private int _maxOxygen = 0;
+    private int _maxOxygen = 100;
     protected override void OnInit()
     {
         if(_gaugeImage == null)
@@ -18,6 +18,7 @@ public class OxygenGauge : BaseUI
             Debug.LogError("【空引用】OxygenText is null");
         EventBus.Instance.AddListener<int>(EventType.OnOxygenChange, GetCurrentOxygen);
         EventBus.Instance.AddListener<int>(EventType.OnMaxOxygenChange, GetMaxOxygen);
+        _maxOxygen = Oxygen.Instance.maxValue;
     }
     public void GetCurrentOxygen(int value)
     {

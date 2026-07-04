@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 400, y: 30}
+  m_SizeDelta: {x: 600, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3376436203405377674
 CanvasRenderer:
@@ -87,6 +87,7 @@ GameObject:
   - component: {fileID: 9127872596455598105}
   - component: {fileID: 2124749458897311761}
   - component: {fileID: 382426318015284453}
+  - component: {fileID: 3546677804999981483}
   m_Layer: 5
   m_Name: OxygenGauge
   m_TagString: Untagged
@@ -113,7 +114,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: 400, y: 30}
+  m_SizeDelta: {x: 600, y: 30}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &9127872596455598105
 CanvasRenderer:
@@ -169,6 +170,18 @@ MonoBehaviour:
   hideDuration: 0.5
   _gaugeImage: {fileID: 418465751433311944}
   _oxygenText: {fileID: 6691230792831997868}
+--- !u!225 &3546677804999981483
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6913657493269822045}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &8256758411050372728
 GameObject:
   m_ObjectHideFlags: 0

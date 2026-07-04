@@ -35,6 +35,8 @@ public class OnBoat : BaseState
         }
 
         EventBus.Instance.AddListener(EventType.Interactive, OnInteractive);
+
+        EventBus.Instance.TriggerEvent(EventType.OxygenChange,int.MaxValue);
     }
 
     private void OnInteractive()
