@@ -5,7 +5,7 @@ using UnityEngine;
 public class Attack : BaseObj
 {
     public int damage = 1;
-    protected override void OnTriggerEnter(Collider other)
+    protected override void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
         {
