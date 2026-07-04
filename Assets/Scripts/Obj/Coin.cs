@@ -5,7 +5,7 @@ using UnityEngine;
 public class Coin : BaseObj
 {
     public int value = 1;
-    protected override void OnTriggerEnter(Collider other)
+    protected override void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {

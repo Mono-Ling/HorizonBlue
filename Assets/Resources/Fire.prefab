@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 7411849843760043418}
   - component: {fileID: 889934284798276460}
   - component: {fileID: 5908004703317449625}
-  - component: {fileID: 684091403891506961}
+  - component: {fileID: 2661468832213483141}
+  - component: {fileID: 605578401163883034}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Untagged
@@ -133,7 +134,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.75, y: 10}
   m_EdgeRadius: 0
---- !u!114 &684091403891506961
+--- !u!114 &2661468832213483141
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,10 +143,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 4765068723026497707}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ec0aee76057b2f4caa2cf31bf4e84d1, type: 3}
+  m_Script: {fileID: 11500000, guid: 17b114cc8ceb75c4fa9f409b13aea792, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageMultiplier: 2
+  damage: 2
+  startStation: 0
+  shootTime: 3
+  restTime: 2
+  particleSystem: {fileID: 1490596450823069795}
+  boxCollider2D: {fileID: 5908004703317449625}
+  lightObj: {fileID: 4891166440833367391}
+  animator: {fileID: 605578401163883034}
+--- !u!95 &605578401163883034
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4765068723026497707}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e05ed2e83259ee54fa29e3f75224a941, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4891166440833367391
 GameObject:
   m_ObjectHideFlags: 0
