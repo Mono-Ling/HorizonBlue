@@ -36,7 +36,9 @@ public class OnBoat : BaseState
 
         EventBus.Instance.AddListener(EventType.Interactive, OnInteractive);
 
-        EventBus.Instance.TriggerEvent(EventType.OxygenChange,int.MaxValue);
+        EventBus.Instance.TriggerEvent(EventType.OxygenChange,1000);
+
+        UIManager.Instance.ShowUI<ButUpgrade>();
     }
 
     private void OnInteractive()
@@ -65,5 +67,7 @@ public class OnBoat : BaseState
                 playerRb.velocity = Vector2.zero;
             }
         }
+
+        UIManager.Instance.HideUI<ButUpgrade>();
     }
 }

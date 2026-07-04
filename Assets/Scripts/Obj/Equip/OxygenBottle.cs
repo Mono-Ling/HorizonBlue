@@ -11,10 +11,12 @@ public class OxygenBottle : BaseEquip
     }
     override public void Install()
     {
-        EventBus.Instance.TriggerEvent(EventType.MaxOxygenChange, _defaultOxygenAmount * (int)quality);
+        int delat = _defaultOxygenAmount * (int)quality;
+        EventBus.Instance.TriggerEvent(EventType.MaxOxygenChange, delat);
+        EventBus.Instance.TriggerEvent(EventType.OxygenChange,delat);
     }
     public override void Uninstall()
     {
-        EventBus.Instance.TriggerEvent(EventType.MaxOxygenChange, _defaultOxygenAmount);
+        //EventBus.Instance.TriggerEvent(EventType.MaxOxygenChange, _defaultOxygenAmount);
     }
 }
