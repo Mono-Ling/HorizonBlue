@@ -9,7 +9,7 @@ public enum EventType
     /// </summary>
     AnchorMove,
     /// <summary>
-    /// Vector2���Ͳ���
+    /// Vector2���Ͳ���PlayerMove
     /// </summary>
     PlayerMove,
     /// <summary>

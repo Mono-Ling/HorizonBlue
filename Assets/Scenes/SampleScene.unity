@@ -6679,6 +6679,156 @@ PolygonCollider2D:
       - {x: 2.125, y: -10.59375}
       - {x: 2.5, y: -10.65625}
   m_UseDelaunayMesh: 0
+--- !u!1001 &1376444770
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8653719598885068355, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_Name
+      value: Diver
+      objectReference: {fileID: 0}
+    - target: {fileID: -7698013978545170523, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_Name
+      value: zuoxiaoshou
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 48.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -48.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6900818959896083359, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_Name
+      value: qinang
+      objectReference: {fileID: 0}
+    - target: {fileID: -4144513311447539184, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_Name
+      value: youdatui
+      objectReference: {fileID: 0}
+    - target: {fileID: -4105527669333830113, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_Name
+      value: youxiaotui
+      objectReference: {fileID: 0}
+    - target: {fileID: -2817033066677339286, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_Name
+      value: xiazhuang
+      objectReference: {fileID: 0}
+    - target: {fileID: -1092313350398300710, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_Name
+      value: youjioapu
+      objectReference: {fileID: 0}
+    - target: {fileID: 171248452270311633, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_Name
+      value: zuojiao
+      objectReference: {fileID: 0}
+    - target: {fileID: 789386882775069141, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_Name
+      value: youjiao
+      objectReference: {fileID: 0}
+    - target: {fileID: 989440675366272025, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_Name
+      value: zuojiaopu
+      objectReference: {fileID: 0}
+    - target: {fileID: 2365196464942693421, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_Name
+      value: youdashou
+      objectReference: {fileID: 0}
+    - target: {fileID: 2827544289379114158, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_Name
+      value: tou
+      objectReference: {fileID: 0}
+    - target: {fileID: 3481666784152200713, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_Name
+      value: shen
+      objectReference: {fileID: 0}
+    - target: {fileID: 3888101207261823304, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_Name
+      value: zuodatui
+      objectReference: {fileID: 0}
+    - target: {fileID: 4598151406335647095, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_Name
+      value: dazuoshou
+      objectReference: {fileID: 0}
+    - target: {fileID: 4881554617100974130, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_Name
+      value: zuoxiaotui
+      objectReference: {fileID: 0}
+    - target: {fileID: 5412250166479591655, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      propertyPath: m_Name
+      value: youxiaoshou
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1376444772}
+  m_SourcePrefab: {fileID: 4843985084834002234, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+--- !u!1 &1376444771 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8653719598885068355, guid: 30ef417494dfe3f4c8bd958462b217cf, type: 3}
+  m_PrefabInstance: {fileID: 1376444770}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1376444772
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376444771}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 160546674191e3c49a50bde58ca41777, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1385270499
 GameObject:
   m_ObjectHideFlags: 0
@@ -10252,3 +10402,4 @@ SceneRoots:
   - {fileID: 816334228}
   - {fileID: 1855441951}
   - {fileID: 1713324283}
+  - {fileID: 1376444770}
