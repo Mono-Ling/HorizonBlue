@@ -9,8 +9,7 @@ public class Test : MonoBehaviour
     {
         GlobalValue.Instance.Init();
         PlayerEquip.Instance.Init();
-        GlobalValue.Instance.AddMoney(4);
-        UIManager.Instance.ShowUI<UpgradePanel>();
+        GameManager.Instance.Init();
     }
 
     // Update is called once per frame

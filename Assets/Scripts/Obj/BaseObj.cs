@@ -4,5 +4,5 @@ using UnityEngine;
 
 public abstract class BaseObj : MonoBehaviour
 {
-    protected abstract void OnTriggerEnter(Collider other);
+    protected abstract void OnTriggerEnter2D(Collider2D other);
 }
