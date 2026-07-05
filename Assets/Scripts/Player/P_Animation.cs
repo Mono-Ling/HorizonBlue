@@ -20,16 +20,16 @@ public class P_Animation : MonoBehaviour
 
     private void GetDir(Vector2 dir)
     {
-        if(dir.magnitude > 0.5)
-        {
-            animator.SetFloat(_horizontal,1);
-            animator.SetFloat(_vertical,1);
-        }
-        else
-        {
-            animator.SetFloat(_horizontal,-1);
-            animator.SetFloat(_vertical,-1);
-        }
+        // if(dir.magnitude > 0.5)
+        // {
+        //     animator.SetFloat(_horizontal,1);
+        //     animator.SetFloat(_vertical,1);
+        // }
+        // else
+        // {
+        //     animator.SetFloat(_horizontal,-1);
+        //     animator.SetFloat(_vertical,-1);
+        // }
     }
     private void PlayerDie()
     {
