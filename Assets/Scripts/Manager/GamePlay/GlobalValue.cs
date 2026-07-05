@@ -12,7 +12,7 @@ public class GlobalValue : SingleMono<GlobalValue>
     }
     public int money { get; private set; } = 0;
     public PlayerSpeed playerSpeed { get; private set; } = PlayerSpeed.Slow;
-    public int maxDeep { get; private set; } = 100;
+    public int maxDeep { get; private set; } = 70;
     public int currentDeep { get; private set; } = 0;
     public void AddMoney(int value)
     {

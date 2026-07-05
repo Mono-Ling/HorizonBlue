@@ -56,4 +56,11 @@ public class FireAttack : KeepAttack
             EventBus.Instance.TriggerEvent(EventType.OxygenDeclineSpeed, damageMultiplier);
         }
     }
+    protected void OnTriggerExit2D(Collider2D collider)
+    {
+        if (collider.CompareTag("Player"))
+        {
+            EventBus.Instance.TriggerEvent<float>(EventType.OxygenDeclineSpeed, 1f);
+        }
+    }
 }

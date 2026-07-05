@@ -13,7 +13,7 @@ public class DivingSuit : BaseEquip
         switch (quality)
         {
             case EquipQuality.Low:
-                GlobalValue.Instance.SetMaxDeep(100);
+                GlobalValue.Instance.SetMaxDeep(70);
                 break;
             case EquipQuality.Middle:
                 GlobalValue.Instance.SetMaxDeep(200);

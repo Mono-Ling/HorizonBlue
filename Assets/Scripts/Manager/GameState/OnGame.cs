@@ -40,6 +40,8 @@ public class OnGame : BaseState
         cooldownRemaining = EvacuateCooldown;
 
         Oxygen.Instance.StartReduce();
+
+        AudioManager.Instance.SwitchMusic("BGM - 浅水区");
     }
 
     private void OnPlayerEnterEvacuate()
@@ -102,5 +104,7 @@ public class OnGame : BaseState
         cooldownRemaining = 0f;
 
         Oxygen.Instance.StopReduce();
+
+        AudioManager.Instance.StopMusic();
     }
 }

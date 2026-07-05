@@ -44,7 +44,13 @@ public class UpgradePanel : BaseUI
         EquipQuality quality = (EquipQuality)Mathf.Clamp((int)PlayerEquip.Instance.divingSuit.quality + 1,1,3);
         EventBus.Instance.TriggerEvent<BaseEquip>(EventType.OnPlayerEquipChange, new DivingSuit(quality));
         if(!GlobalValue.Instance.RemoveMoney(1))
+        {
             Debug.LogWarning("【升级金币溢出】");
+            return;
+        }
+
+        AudioManager.Instance.Play("Upgrade",false);
+        
         divingSuitItem.SetItemLevel((int)quality);
         UpdateButton();
     }
@@ -53,7 +59,13 @@ public class UpgradePanel : BaseUI
         EquipQuality quality = (EquipQuality)Mathf.Clamp((int)PlayerEquip.Instance.oxygenBottle.quality + 1,1,3);
         EventBus.Instance.TriggerEvent<BaseEquip>(EventType.OnPlayerEquipChange, new OxygenBottle(quality));
         if(!GlobalValue.Instance.RemoveMoney(1))
+        {
             Debug.LogWarning("【升级金币溢出】");
+            return;
+        }
+
+        AudioManager.Instance.Play("Upgrade",false);
+
         oxygenBottleItem.SetItemLevel((int)quality);
         UpdateButton();
     }
@@ -62,7 +74,13 @@ public class UpgradePanel : BaseUI
         EquipQuality quality = (EquipQuality)Mathf.Clamp((int)PlayerEquip.Instance.flipper.quality + 1,1,3);
         EventBus.Instance.TriggerEvent<BaseEquip>(EventType.OnPlayerEquipChange, new Flipper(quality));
         if(!GlobalValue.Instance.RemoveMoney(1))
+        {
             Debug.LogWarning("【升级金币溢出】");
+            return;
+        }
+
+        AudioManager.Instance.Play("Upgrade",false);
+        
         flipperItem.SetItemLevel((int)quality);
         UpdateButton();
     }
@@ -75,6 +93,7 @@ public class UpgradePanel : BaseUI
     }
     private void Quit()
     {
+        AudioManager.Instance.Play("UI_Click",false);
         UIManager.Instance.HideUI<UpgradePanel>();
     }
 }

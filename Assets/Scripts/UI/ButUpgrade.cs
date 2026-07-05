@@ -17,6 +17,7 @@ public class ButUpgrade : BaseUI
     }
     private void OpenUpgradePanel()
     {
+        AudioManager.Instance.Play("UI_Click",false);
         UIManager.Instance.ShowUI<UpgradePanel>();
     }
 }

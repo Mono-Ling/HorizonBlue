@@ -8,6 +8,8 @@ public class OnBoat : BaseState
     private Transform playerTransform;
     private Transform boatTransform;
     private Rigidbody2D playerRb;
+    
+    private AudioSource audioSource;
 
     public override void EnterState()
     {
@@ -39,6 +41,8 @@ public class OnBoat : BaseState
         EventBus.Instance.TriggerEvent(EventType.OxygenChange,1000);
 
         UIManager.Instance.ShowUI<ButUpgrade>();
+
+        audioSource = AudioManager.Instance.Play("Drive_Boat",true);
     }
 
     private void OnInteractive()
@@ -69,5 +73,8 @@ public class OnBoat : BaseState
         }
 
         UIManager.Instance.HideUI<ButUpgrade>();
+
+        audioSource.Stop();
+        GameObject.Destroy(audioSource.gameObject);
     }
 }
