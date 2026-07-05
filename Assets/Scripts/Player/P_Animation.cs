@@ -43,7 +43,7 @@ public class P_Animation : MonoBehaviour
     {
         yield return new WaitForSeconds(dieDelay);
 #if UNITY_EDITOR
-        EditorApplication.isPlaying = false;
+        //EditorApplication.isPlaying = false;
 #else
         Application.Quit();
 #endif
