@@ -716,7 +716,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3075528033427280756, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: damageMultiplier
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4765068723026497707, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: m_Name
@@ -5704,7 +5704,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3075528033427280756, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: damageMultiplier
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4765068723026497707, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: m_Name
@@ -8950,7 +8950,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3075528033427280756, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: damageMultiplier
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4765068723026497707, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: m_Name
@@ -9840,6 +9840,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 341303410}
     m_Modifications:
+    - target: {fileID: 3075528033427280756, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
+      propertyPath: damageMultiplier
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4765068723026497707, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: m_Name
       value: Fire (9)
@@ -10093,7 +10097,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3075528033427280756, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: damageMultiplier
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4765068723026497707, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: m_Name
@@ -11036,7 +11040,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3075528033427280756, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: damageMultiplier
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4765068723026497707, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: m_Name
@@ -12154,6 +12158,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 341303410}
     m_Modifications:
+    - target: {fileID: 3075528033427280756, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
+      propertyPath: damageMultiplier
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4765068723026497707, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: m_Name
       value: Fire (11)
@@ -12307,7 +12315,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3075528033427280756, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: damageMultiplier
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4765068723026497707, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: m_Name
@@ -12535,6 +12543,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 341303410}
     m_Modifications:
+    - target: {fileID: 3075528033427280756, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
+      propertyPath: damageMultiplier
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4765068723026497707, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: m_Name
       value: Fire (10)
@@ -14127,6 +14139,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 341303410}
     m_Modifications:
+    - target: {fileID: 3075528033427280756, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
+      propertyPath: damageMultiplier
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4765068723026497707, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: m_Name
       value: Fire (3)
@@ -17201,7 +17217,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3075528033427280756, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: damageMultiplier
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4765068723026497707, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: m_Name
@@ -17515,6 +17531,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 341303410}
     m_Modifications:
+    - target: {fileID: 3075528033427280756, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
+      propertyPath: damageMultiplier
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4765068723026497707, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: m_Name
       value: Fire (4)
@@ -18175,6 +18195,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 341303410}
     m_Modifications:
+    - target: {fileID: 3075528033427280756, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
+      propertyPath: damageMultiplier
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4765068723026497707, guid: 23b58a5be1ac13645a69fcdf4518d496, type: 3}
       propertyPath: m_Name
       value: Fire (5)
