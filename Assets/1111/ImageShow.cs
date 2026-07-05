@@ -8,6 +8,7 @@ public class ImageShow : MonoBehaviour
     public Sprite[] sprites;
     public Image Image;
     private int _index = 0;
+    public TalkBar talkBar;
 
     private bool _canInput = false;
     public void Show()
@@ -28,6 +29,12 @@ public class ImageShow : MonoBehaviour
         {
             _canInput = false;
             Image.gameObject.SetActive(false);
+            if (_index >= sprites.Length)
+            {
+
+                talkBar.gameObject.SetActive(true);
+                talkBar.Init(false);
+            }
         }
     }
 }
