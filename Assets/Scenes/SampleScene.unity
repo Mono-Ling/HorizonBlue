@@ -7566,7 +7566,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23482d983dee21b4d853e43943d13ce3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImageShow: {fileID: 0}
+  ImageShow: {fileID: 1584934168}
 --- !u!61 &804807350
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8098,7 +8098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23482d983dee21b4d853e43943d13ce3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImageShow: {fileID: 0}
+  ImageShow: {fileID: 1584934168}
 --- !u!61 &849634326
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8848,7 +8848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23482d983dee21b4d853e43943d13ce3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImageShow: {fileID: 0}
+  ImageShow: {fileID: 1584934168}
 --- !u!61 &937321856
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9074,7 +9074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23482d983dee21b4d853e43943d13ce3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImageShow: {fileID: 0}
+  ImageShow: {fileID: 1584934168}
 --- !u!61 &961325931
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11211,7 +11211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23482d983dee21b4d853e43943d13ce3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ImageShow: {fileID: 0}
+  ImageShow: {fileID: 1584934168}
 --- !u!61 &1208622645
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13855,6 +13855,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 341303410}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1584934168 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5417238603104420855, guid: 72739736c1cd47e4a85f827293203553, type: 3}
+  m_PrefabInstance: {fileID: 167463561}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40aeda2f274e1164794c2f079257f7fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1595375795
 PrefabInstance:
   m_ObjectHideFlags: 0
