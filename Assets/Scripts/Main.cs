@@ -51,6 +51,8 @@ public class Main : MonoBehaviour
 
         UIManager.Instance.ShowUI<MemonyPanel>();
 
+        GlobalValue.Instance.AddMoney(4);
+
 #if UNITY_EDITOR
         Debug.Log($"[Main] 单例预热完成：" +
                   $"EventBus ✓, GlobalValue ✓, InputManager ✓, " +
