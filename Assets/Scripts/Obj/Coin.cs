@@ -10,6 +10,7 @@ public class Coin : BaseObj
         if (other.CompareTag("Player"))
         {
             GlobalValue.Instance.AddMoney(value);
+            AudioManager.Instance.Play("Pick_Up",false);
             Destroy(gameObject);
         }
     }

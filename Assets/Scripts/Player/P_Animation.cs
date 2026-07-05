@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class P_Animation : MonoBehaviour
 {
+    public float dieDelay = 3;
     private Animator animator;
     private const string _horizontal = "horizontal";
     private const string _vertical = "vertical";
@@ -35,6 +37,16 @@ public class P_Animation : MonoBehaviour
     {
         animator.SetBool(_isDie,true);
         Debug.LogWarning("玩家死亡");
+        StartCoroutine(Quit());
+    }
+    public IEnumerator Quit()
+    {
+        yield return new WaitForSeconds(dieDelay);
+#if UNITY_EDITOR
+        EditorApplication.isPlaying = false;
+#else
+        Application.Quit();
+#endif
     }
     void OnDestroy()
     {

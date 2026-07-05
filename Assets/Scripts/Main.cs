@@ -43,6 +43,8 @@ public class Main : MonoBehaviour
         // 第7层：UI（加载 UICanvas，IO 操作较重，放最后）
         var uiManager = UIManager.Instance;
 
+        AudioManager.Instance.Init();
+
         UIManager.Instance.ShowUI<DeepGauge>();
 
         UIManager.Instance.ShowUI<OxygenGauge>();
