@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Oxygen : SingleMono<Oxygen>
 {
-    private const float _delayTime = 5.0f;
-    private const int _changeFrame = 5;
+    private const float _delayTime = 1.0f;
+    private const int _changeFrame = 1;
     private int _multiply = 1;
     private int value = 100;
     public int maxValue {get; private set;} = 100;
