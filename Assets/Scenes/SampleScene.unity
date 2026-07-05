@@ -1994,6 +1994,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5232026327277495647, guid: 72739736c1cd47e4a85f827293203553, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232026327277495647, guid: 72739736c1cd47e4a85f827293203553, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 5232026327277495647, guid: 72739736c1cd47e4a85f827293203553, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 8208272323447278215, guid: 72739736c1cd47e4a85f827293203553, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2074,9 +2086,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9123849181569075614, guid: 72739736c1cd47e4a85f827293203553, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -1029.449
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123849181569075614, guid: 72739736c1cd47e4a85f827293203553, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 265.719
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123849181569075614, guid: 72739736c1cd47e4a85f827293203553, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 22.04602
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123849181569075614, guid: 72739736c1cd47e4a85f827293203553, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 187
+      objectReference: {fileID: 0}
     - target: {fileID: 9160477959943373509, guid: 72739736c1cd47e4a85f827293203553, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221766846620992252, guid: 72739736c1cd47e4a85f827293203553, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 859.6533
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221766846620992252, guid: 72739736c1cd47e4a85f827293203553, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 469.472
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221766846620992252, guid: 72739736c1cd47e4a85f827293203553, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 37.495
+      objectReference: {fileID: 0}
+    - target: {fileID: 9221766846620992252, guid: 72739736c1cd47e4a85f827293203553, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 67
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
